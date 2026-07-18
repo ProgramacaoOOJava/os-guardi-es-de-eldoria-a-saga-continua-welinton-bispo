@@ -5,8 +5,12 @@ package eldoria;
  * Herda de Personagem e implementa habilidades específicas de combate.
  */
 public class Guerreiro extends Personagem {
-
+	private int forca;
      // * Construtor para criar um Guerreiro.
+	public Guerreiro(String nome, String classe, int nivel, int pontoDeVidas, double poderBase, int forca) {
+		super(nome, classe, nivel, pontoDeVidas, poderBase);
+		this.forca = forca;
+	}
 
     /**
      * Sobrescrita do método usarHabilidade() específica para Guerreiros.
@@ -14,7 +18,7 @@ public class Guerreiro extends Personagem {
      */
     @Override
     public void usarHabilidade() {
-
+    	System.out.println(getNome() + " ativa sua Habilidade Especial: Espada Flamejante!\n");
     }
 }
 

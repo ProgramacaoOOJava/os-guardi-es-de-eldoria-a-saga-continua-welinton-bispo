@@ -16,11 +16,11 @@ public abstract class Personagem {
 
     // * Construtor que inicializa todos os atributos do personagem.
     public Personagem(String nome, String classe, int nivel, int pontoDeVidas, double poderBase){
-        this.nome = nome;
-        this.classe = classe;
-        this.nivel = nivel;
-        this.pontoDeVidas = pontoDeVidas;
-        this.poderBase = poderBase;
+        setNome(nome);
+        setClasse(classe);
+        setNivel(nivel);
+        setPontoDeVidas(pontoDeVidas);
+        setPoderBase(poderBase);
     }
 
     // Getters
@@ -36,7 +36,7 @@ public abstract class Personagem {
     	return this.nivel;
     }
     
-    public int getPontosDeVidas() {
+    public int getPontoDeVidas() {
     	return this.pontoDeVidas;
     }
     
